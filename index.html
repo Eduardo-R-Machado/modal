@@ -16,17 +16,17 @@
             <h3><b>O quanto você indicaria o Feras de Vendas <br> MDO para um colega de trabalho?</b></h3>
         </div>
         <div class="wrp-numbers">
-            <span class="box-number" id="vote0">0</span>
-            <span class="box-number" id="vote1">1</span>
-            <span class="box-number" id="vote2">2</span>
-            <span class="box-number" id="vote3">3</span>
-            <span class="box-number" id="vote4">4</span>
-            <span class="box-number" id="vote5">5</span>
-            <span class="box-number" id="vote6">6</span>
-            <span class="box-number" id="vote7">7</span>
-            <span class="box-number" id="vote8">8</span>
-            <span class="box-number" id="vote9">9</span>
-            <span class="box-number" id="vote10">10</span>
+            <span class="box-number" value="0" id="vote0">0</span>
+            <span class="box-number" value="1" id="vote1">1</span>
+            <span class="box-number" value="2" id="vote2">2</span>
+            <span class="box-number" value="3" id="vote3">3</span>
+            <span class="box-number" value="4" id="vote4">4</span>
+            <span class="box-number" value="5" id="vote5">5</span>
+            <span class="box-number" value="6" id="vote6">6</span>
+            <span class="box-number" value="7" id="vote7">7</span>
+            <span class="box-number" value="8" id="vote8">8</span>
+            <span class="box-number" value="9" id="vote9">9</span>
+            <span class="box-number" value="10" id="vote10">10</span>
         </div>
 
         <div class="wrp-btn">
@@ -108,8 +108,15 @@
         height: 2.3rem;
         border-radius: 0.25rem;
         margin: 0.7rem;
+        cursor: pointer;
+        transition: all 0.3s;
     }
 
+    .modal-nps .wrp-numbers span:hover{
+        width: 2.6rem;
+        height: 2.6rem;
+        background-color: #b7e4f1;
+    }
     .modal-nps .wrp-btn{
         z-index: 2;
         display: flex;
@@ -131,5 +138,6 @@
         text-transform: uppercase;
         font-weight: 500;
         font-size: 1rem;
+        cursor: pointer;
     }
 </style>
